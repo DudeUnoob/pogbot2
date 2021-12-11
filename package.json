@@ -62,6 +62,9 @@
     "weky": "^3.1.8",
     "wio.db": "^4.0.21"
   },
+  "engines":{
+    "node":"^16.6.1"
+  },
   "devDependencies": {
     "node": "^16.6.1"
   },
