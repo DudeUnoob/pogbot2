@@ -325,7 +325,7 @@ module.exports = client => {
      */
     //START THE WEBSITE ON THE DEFAULT PORT (80)
     const http = require(`http`).createServer(app);
-    http.listen(process.env.PORT, () => {
+    http.listen(3000, () => {
         console.log(`[${settings.website.domain}]: HTTP-Website running on ${process.env.PORT} port.`)
     });
 }
