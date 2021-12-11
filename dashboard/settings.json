@@ -1,7 +1,7 @@
 {
     "website" : {
       "support": "https://discord.gg/EacJUHRuyx",
-      "domain": "https://pogbot.ga"
+      "domain": "https://pogbot-official.herokuapp.com"
     },
     "config": {
         "http": {
