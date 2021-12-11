@@ -1,0 +1,14 @@
+{
+    "website" : {
+      "support": "https://discord.gg/EacJUHRuyx",
+      "domain": "https://pogbot.ga"
+    },
+    "config": {
+        "http": {
+          "port": 80
+        },
+        "callback": "https://pogbot.ga/callback",
+        "clientID": "893588984826044446",
+        "secret": "8G-eEldR8BAqKYSZP1VAfsk7oZ1r4BaN"
+    }
+  }
