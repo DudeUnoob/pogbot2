@@ -16,6 +16,7 @@ const DisTube = require("distube").default;
 const https = require('https-proxy-agent');
 const modlogsSchema = require('./handlers/modlogs')
 const premiumSchema = require('./handlers/premium')
+const moneySchema = require('./handlers/money')
 const { mongooseConnectionString } = require(`./botconfig/config.json`);
 var jimp = require('jimp')
 const client = new Discord.Client({
@@ -115,6 +116,33 @@ client.modlogs = async function({ Member, Action, Color, Reason, Author}, messag
 
     channel.send({embeds: [logsEmbed]})
 }
+client.bal = (id) => new Promise(async ful => {
+  const data = await moneySchema.findOne({ id });
+  if(!data) return ful(0);
+  ful(data.coins);
+})
+client.add = (id, coins) => {
+   moneySchema.findOne({ id }, async(err, data) => {
+     if(err) throw err;
+     if(data) {
+       data.coins += coins;
+     } else{
+       data = new moneySchema({ id, coins })
+     }
+     data.save();
+   })
+}
+client.rmv = (id, coins) => {
+  moneySchema.findOne({ id }, async(err, data) => {
+    if(err) throw err;
+    if(data) {
+      data.coins -= coins;
+    } else{
+      data = new moneySchema({ id, coins: -coins })
+    }
+    data.save();
+  })
+}
 
 client.setMaxListeners(100); require('events').defaultMaxListeners = 100;
 
@@ -123,7 +151,7 @@ client.infos = new Enmap({ name: "infos", dataDir: "./databases/infos"});
 
 
 //Require the Handlers                  Add the antiCrash file too, if its enabled
-["events", "commands", "slashCommands","premium", "welcomeChannel","modlogs",  settings.antiCrash ? "antiCrash" : null, "distubeEvent"]
+["events", "commands", "slashCommands","premium", "money", "welcomeChannel","modlogs",  settings.antiCrash ? "antiCrash" : null, "distubeEvent"]
     .filter(Boolean)
     .forEach(h => {
         require(`./handlers/${h}`)(client);
