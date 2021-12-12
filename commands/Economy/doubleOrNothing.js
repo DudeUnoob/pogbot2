@@ -4,6 +4,8 @@ const client = require('../../index')
 module.exports = {
     name: 'bet',
     aliases:['double-or-nothing'],
+    category:'Economy',
+    description:'Double or nothing',
 
     run: async(client,message,args) => {
         if(!args[0]) return message.channel.send('Please specify an amount to bet!')

@@ -4,6 +4,7 @@ const client = require('../../index')
 module.exports = {
     name:'work',
     cooldown: 6000,
+    description:'Work to earn money',
 
     run: async(client,message,args) => {
         const jobs = ['Programmer', 'Builder', 'Waiter', 'Youtuber', 'Streamer', 'Mechanic', 'Doctor'];

@@ -2,6 +2,9 @@ const { Client, Message, MessageEmbed } = require('discord.js');
 
 module.exports = {
     name: 'bal',
+    description:'Check you money balance',
+    category:'Economy',
+    
 
     run: async(client,message,args) => {
         

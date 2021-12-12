@@ -4,6 +4,9 @@ const client = require('../../index')
 module.exports = {
     name: 'addmoney',
     memberpermissions:['ADMINISTRATOR'],
+    category:'Economy',
+    description:'Adds money to the specified member',
+    
 
     run: async(client,message,args) => {
         const member = message.mentions.members.first() || message.member;

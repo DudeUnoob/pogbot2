@@ -4,6 +4,7 @@ const client = require('../../index')
 module.exports = {
     name:'daily',
     cooldown: 86400,
+    description:'Get you daily money',
 
     run: async(client,message,args) => {
         const coins = Math.floor(Math.random() * 2000) + 1;
