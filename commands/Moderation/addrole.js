@@ -10,6 +10,7 @@
 
     run: async(client,message,args) => {
    
+let member = message.author.username;
 let person = message.mentions.members.first()
 const reason = args.slice(1).join(" ") || "No reason provided";
 let roleAdd = message.mentions.roles.first()
@@ -31,6 +32,7 @@ client.modlogs({
           Action: 'Add Role',
           Color: "BLUE",
           Reason: reason,
+          Author: member,
         }, message)
 
   //  let roleAdd = message.mentions.roles.first()
