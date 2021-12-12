@@ -4,8 +4,8 @@
   description:'Adds the role to a mentioned user',
   usage:'<prefix>addrole @person @role',
   category:'Moderation',
+  memberpermissions:['MANAGE_ROLES'],
   
-
 
 
     run: async(client,message,args) => {

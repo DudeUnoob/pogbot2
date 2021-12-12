@@ -4,6 +4,7 @@ module.exports = {
     description:'removes the role to a mentioned user',
     usage:'<prefix>removerole @person @role',
     category:'Moderation',
+    memberpermissions:['MANAGE_ROLES'],
     
   
   
