@@ -1,4 +1,5 @@
 const { Client, Message, MessageEmbed } = require('discord.js');
+const client = require('../../index')
 
 module.exports = {
     name: 'rmv',
