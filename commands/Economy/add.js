@@ -2,7 +2,7 @@ const { Client, Message, MessageEmbed } = require('discord.js');
 const client = require('../../index')
 
 module.exports = {
-    name: 'addmon',
+    name: 'addmoney',
 
     run: async(client,message,args) => {
         const member = message.mentions.members.first() || message.member;

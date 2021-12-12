@@ -1,7 +1,7 @@
 const { Client, Message, MessageEmbed } = require('discord.js');
 
 module.exports = {
-    name: 'bl',
+    name: 'bal',
 
     run: async(client,message,args) => {
         
