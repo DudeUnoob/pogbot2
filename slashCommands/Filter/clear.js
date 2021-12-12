@@ -9,7 +9,7 @@ const {
 	check_if_dj
 } = require("../../handlers/functions")
 module.exports = {
-	name: "clear", //the command name for the Slash Command
+	name: "clearfilters", //the command name for the Slash Command
 	description: "Clears all Filters", //the command description for Slash Command Overview
 	cooldown: 5,
 	requiredroles: [], //Only allow specific Users with a Role to execute a Command [OPTIONAL]
