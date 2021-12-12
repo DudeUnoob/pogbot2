@@ -9,7 +9,7 @@ module.exports = {
         
         const bal = await client.bal(member.id);
 
-
+        
         message.channel.send(bal + " coins");
     }
 }
