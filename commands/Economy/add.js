@@ -3,6 +3,7 @@ const client = require('../../index')
 
 module.exports = {
     name: 'addmoney',
+    memberpermissions:['ADMINISTRATOR'],
 
     run: async(client,message,args) => {
         const member = message.mentions.members.first() || message.member;
