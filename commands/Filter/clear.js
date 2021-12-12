@@ -12,8 +12,8 @@ module.exports = {
 	name: "clear", //the command name for the Slash Command
 
 	category: "Filter",
-	usage: "clear",
-	aliases: ["clearfilters", "clearf", "cfilters", "cfilter", "clearfilter"],
+	usage: "clearfilters",
+	aliases: ["clearf", "cfilters", "cfilter", "clearfilter"],
 
 	description: "Clears all Filters", //the command description for Slash Command Overview
 	cooldown: 5,
