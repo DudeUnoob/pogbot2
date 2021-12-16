@@ -56,8 +56,8 @@
     "randomstring": "^1.2.1",
     "request": "^2.88.2",
     "session": "^0.1.0",
-    "simply-djs": "^2.2.2",
-    "sourcebin_js": "0.0.3-ignore",
+    "simply-djs": "^2.5.0",
+    "sourcebin_js": "^0.0.3-ignore",
     "url": "^0.11.0",
     "weky": "^2.0.9",
     "wio.db": "^4.0.21"
