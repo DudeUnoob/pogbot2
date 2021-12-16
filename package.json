@@ -24,7 +24,7 @@
     "discord-reply": "^0.1.2",
     "discord-spam-protector": "^1.1.4",
     "discord.js": "^13.3.1",
-    "distube": "^3.0.3",
+    "distube": "^3.0.4",
     "dotenv": "^10.0.0",
     "ejs": "^3.1.6",
     "enmap": "^5.8.7",
@@ -62,8 +62,8 @@
     "weky": "^3.1.8",
     "wio.db": "^4.0.21"
   },
-  "engines":{
-    "node":"^16.6.1"
+  "engines": {
+    "node": "^16.6.1"
   },
   "devDependencies": {
     "node": "^16.6.1"
@@ -74,7 +74,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"node index.ejs"
+    "start": "node index.ejs"
   },
   "author": "",
   "license": "ISC"
