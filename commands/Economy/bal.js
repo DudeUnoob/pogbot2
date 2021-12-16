@@ -1,8 +1,10 @@
 const { Client, Message, MessageEmbed } = require('discord.js');
+const Discord = require('discord.js')
 
 module.exports = {
     name: 'bal',
-    description:'Check you money balance',
+    aliases:['balance'],
+    description:'Check your money balance',
     category:'Economy',
     
 
@@ -12,7 +14,8 @@ module.exports = {
         
         const bal = await client.bal(member.id);
 
-        
-        message.channel.send(bal + " coins");
+        let balEmbed = new Discord.MessageEmbed()
+        .setDescription(bal + " :coin:")
+        message.channel.send({embeds: [balEmbed]});
     }
 }
